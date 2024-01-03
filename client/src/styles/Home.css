@@ -1,0 +1,19 @@
+.sider {
+  width: 60px !important;
+}
+
+.menu {
+  position: fixed;
+  top: 10px;
+}
+
+.site-layout {
+  overflow: auto;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  .titles {
+    display: none;
+  }
+}
