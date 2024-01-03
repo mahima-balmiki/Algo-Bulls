@@ -1,0 +1,26 @@
+name: Run Lint and Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run JavaScript lint
+        run: npm run lint:js
+
+      - name: Run CSS lint
+        run: npm run lint:css
+
+      - name: Run tests
+        run: npm run test
