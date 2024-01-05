@@ -18,7 +18,7 @@ const Logout: React.FC = () => {
 
   return (
     <div>
-      <Button type="primary" danger onClick={handleLogOut}>
+      <Button data-testid="logout" type="primary" danger onClick={handleLogOut}>
         Log Out
       </Button>
     </div>

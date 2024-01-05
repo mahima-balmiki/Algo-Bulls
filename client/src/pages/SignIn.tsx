@@ -54,16 +54,16 @@ const SignIn: React.FC = () => {
               },
             ]}
           >
-            <Input prefix={<UserOutlined />} placeholder="Username or Email" />
+            <Input prefix={<UserOutlined />} placeholder="Username or Email" data-testid="usernameOrEmail"/>
           </Form.Item>
           <Form.Item
             name="password"
             rules={[{ required: true, message: "Please enter your password!" }]}
           >
-            <Input.Password prefix={<LockOutlined />} placeholder="Password" />
+            <Input.Password prefix={<LockOutlined />} placeholder="Password" data-testid="password"/>
           </Form.Item>
           <Form.Item>
-            <Button type="primary" htmlType="submit" block>
+            <Button type="primary" htmlType="submit" data-testid="signInSubmit" block>
               Sign In
             </Button>
           </Form.Item>

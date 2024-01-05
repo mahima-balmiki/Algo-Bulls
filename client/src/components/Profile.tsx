@@ -105,7 +105,7 @@ const Profile: React.FC<ProfileProps> = () => {
 
             <p>Username: @{user?.username}</p>
             <p>Email: {user?.email}</p>
-            <p>Name: {user?.name}</p>
+            <p data-testid="name">Name: {user?.name}</p>
             <p>Password: ********</p>
           </>
         )}
@@ -139,7 +139,7 @@ const Profile: React.FC<ProfileProps> = () => {
               },
             ]}
           >
-            <Input />
+            <Input data-testid="changeName"/>
           </Form.Item>
 
           <Form.Item
@@ -152,11 +152,11 @@ const Profile: React.FC<ProfileProps> = () => {
               },
             ]}
           >
-            <Input.Password />
+            <Input.Password data-testid="changePassword"/>
           </Form.Item>
 
           <Form.Item>
-            <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
+            <Button type="primary" htmlType="submit" style={{ width: "100%" }} data-testid="updateSubmit">
               Update Profile
             </Button>
           </Form.Item>

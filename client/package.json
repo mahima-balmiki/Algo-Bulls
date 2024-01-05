@@ -27,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cypressE2E" : "npx cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -52,6 +53,7 @@
     "@testing-library/jest-dom": "^6.1.6",
     "@testing-library/react": "^14.1.2",
     "@types/jest": "^29.5.11",
+    "cypress": "^13.6.2",
     "jest-fetch-mock": "^3.0.3",
     "stylelint": "^16.1.0",
     "ts-jest": "^29.1.1"

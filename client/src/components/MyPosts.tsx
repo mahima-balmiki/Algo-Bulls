@@ -126,7 +126,7 @@ const MyPosts: React.FC = () => {
       search={false}
       dateFormatter="string"
       headerTitle="My Posts"
-      style={{overflow:"auto", width:"max-content"}}
+      // style={{overflow:"auto", width:"max-content"}}
     />
   );
 };

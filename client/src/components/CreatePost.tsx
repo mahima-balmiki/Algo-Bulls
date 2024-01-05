@@ -62,14 +62,14 @@ const CreatePost: React.FC = () => {
           name="title"
           rules={[{ required: true, message: "Please enter the title!" }]}
         >
-          <Input style={{ borderRadius: "4px" }} />
+          <Input style={{ borderRadius: "4px" }} data-testid="createPostTitle"/>
         </Form.Item>
         <Form.Item
           label="Content"
           name="content"
           rules={[{ required: true, message: "Please enter the content!" }]}
         >
-          <Input.TextArea rows={4} style={{ borderRadius: "4px" }} />
+          <Input.TextArea rows={4} style={{ borderRadius: "4px" }} data-testid="createPostContent"/>
         </Form.Item>
         <Form.Item>
           <Button
@@ -80,6 +80,7 @@ const CreatePost: React.FC = () => {
               justifyContent: "center",
               alignItems: "center",
             }}
+            data-testid="createPostSubmit"
           >
             Create Post
           </Button>

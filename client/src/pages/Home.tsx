@@ -45,6 +45,7 @@ const Home: React.FC = () => {
         <Menu theme="dark" mode="inline" selectedKeys={[location.pathname]} style={{position:"fixed", top:0, width:collapsed ? 40 : 200}}>
           <Menu.Item
             key="/home/create-post"
+            data-testid="createPostLink"
             onClick={() => changeTab("CreatePost")}
             icon={<FormOutlined />}
           >
@@ -52,6 +53,7 @@ const Home: React.FC = () => {
           </Menu.Item>
           <Menu.Item
             key="/home/all-posts"
+            data-testid="allPosts"
             onClick={() => changeTab("AllPosts")}
             icon={<UnorderedListOutlined />}
           >
@@ -59,6 +61,7 @@ const Home: React.FC = () => {
           </Menu.Item>
           <Menu.Item
             key="/home/liked-posts"
+            data-testid="likedPosts"
             onClick={() => changeTab("LikedPosts")}
             icon={<HeartOutlined />}
           >
@@ -66,6 +69,7 @@ const Home: React.FC = () => {
           </Menu.Item>
           <Menu.Item
             key="/home/bookmarked-posts"
+            data-testid="bookmarkedPosts"
             onClick={() => changeTab("BookmarkedPosts")}
             icon={<BookOutlined />}
           >
@@ -73,6 +77,7 @@ const Home: React.FC = () => {
           </Menu.Item>
           <Menu.Item
             key="/home/my-posts"
+            data-testid="myPosts"
             onClick={() => changeTab("MyPosts")}
             icon={<FileTextOutlined />}
           >
@@ -80,6 +85,7 @@ const Home: React.FC = () => {
           </Menu.Item>
           <Menu.Item
             key="/home/my-profile"
+            data-testid="profile"
             onClick={() => changeTab("Profile")}
             icon={<UserOutlined />}
           >
